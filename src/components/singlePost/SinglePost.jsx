@@ -10,7 +10,7 @@ return (
             <img
                 className="singlePostImg"
                 src={pup}
-                alt=""
+                alt="cute puppy"
         />
         <h1 className="singlePostTitle">
                 Lorem ipsum dolor

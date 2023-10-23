@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./commentSection.css"
 
 export default function CommentSection() {
     const [comments, setComments] = useState([]);
@@ -34,7 +35,7 @@ const handleDeleteComment = (index) => {
 
 return (
     <div className="commentSection">
-        <h2>Comments</h2>
+        <h3>Comments</h3>
         <div className="commentInput">
         <input
             type="text"
@@ -60,8 +61,14 @@ return (
             <>
                 {comment}
                 <div className="commentButtons">
-                    <button onClick={() => handleEditComment(index)}>Edit</button>
-                    <button onClick={() => handleDeleteComment(index)}>Delete</button>
+                    <button onClick={() => handleEditComment(index)}>
+                    <i className="singlePostIcon fa-solid fa-pen-to-square fa-beat-fade"></i>
+                        Edit
+                        </button>
+                    <button onClick={() => handleDeleteComment(index)}>
+                    <i className="singlePostIcon fa-solid fa-trash-can fa-beat-fade"></i>
+                        Delete
+                        </button>
                 </div>
             </>
             )}

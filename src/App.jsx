@@ -12,7 +12,7 @@ import Posts from "./components/posts/Posts";
 import "./style.css";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <Router>
       <TopBar />

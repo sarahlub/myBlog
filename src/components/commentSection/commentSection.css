@@ -1,0 +1,27 @@
+/* Base styles */
+.commentSection {
+    display: flex;
+    flex-direction: column; /* Change to a column layout for small screens */
+    margin: 20px;
+  }
+  
+  .commentInput {
+    margin: 20px;
+  }
+  
+  /* Add a media query for larger screens */
+  @media (min-width: 768px) {
+    .commentSection {
+      flex-direction: row; /* Change back to a row layout for larger screens */
+    }
+  
+    .commentInput {
+      flex: 1; /* Make the input area grow to fill available space */
+      margin: 20px;
+    }
+  
+    .comments {
+      flex: 2; /* Make the comments area take more space */
+    }
+  }
+  

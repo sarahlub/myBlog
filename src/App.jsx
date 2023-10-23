@@ -12,7 +12,7 @@ import Posts from "./components/posts/Posts";
 import "./style.css";
 
 function App() {
-  const currentUser = true;
+  const user = true;
   return (
     <Router>
       <TopBar />
@@ -24,15 +24,15 @@ function App() {
           <Posts />
         </Route>
         <Route path="/register">
-          {currentUser ? <Homepage /> : <Register />}
+          {user ? <Homepage /> : <Register />}
         </Route>
-        <Route path="/login">{currentUser ? <Homepage /> : <Login />}</Route>
+        <Route path="/login">{user ? <Homepage /> : <Login />}</Route>
         <Route path="/post/:id">
           <Single />
         </Route>
-        <Route path="/write">{currentUser ? <Write /> : <Login />}</Route>
+        <Route path="/write">{user ? <Write /> : <Login />}</Route>
         <Route path="/setting">
-          {currentUser ? <Setting /> : <Login />}
+          {user ? <Setting /> : <Login />}
         </Route>
       </Switch>
     </Router>

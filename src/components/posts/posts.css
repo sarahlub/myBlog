@@ -4,3 +4,14 @@
     flex-wrap: wrap;
     margin: 20px;
 }
+
+@media (min-width: 769px) {
+}
+
+  /* Define styles for screens narrower than 768px but wider than 480px */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+  /* Define styles for screens narrower than 480px */
+@media (max-width: 480px) {
+}
